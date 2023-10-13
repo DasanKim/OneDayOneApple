@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC89500F2AD9ADBF00308AC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89500E2AD9ADBF00308AC8 /* Constants.swift */; };
+		AC8950112AD9ADDC00308AC8 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */; };
 		AC8950132AD9AE0000308AC8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950122AD9AE0000308AC8 /* NetworkManager.swift */; };
 		AC9325BE2AD954430036943F /* OneDayOneAppleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9325BD2AD954430036943F /* OneDayOneAppleApp.swift */; };
 		AC9325C02AD954430036943F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9325BF2AD954430036943F /* ContentView.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC89500E2AD9ADBF00308AC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		AC8950122AD9AE0000308AC8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AC9325BA2AD954430036943F /* OneDayOneApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneDayOneApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9325BD2AD954430036943F /* OneDayOneAppleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDayOneAppleApp.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				AC9325FD2AD989DF0036943F /* DTO */,
+				AC89500E2AD9ADBF00308AC8 /* Constants.swift */,
+				AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */,
 				AC8950122AD9AE0000308AC8 /* NetworkManager.swift */,
 			);
 			path = Model;
@@ -310,7 +316,9 @@
 				AC9325C02AD954430036943F /* ContentView.swift in Sources */,
 				AC9325BE2AD954430036943F /* OneDayOneAppleApp.swift in Sources */,
 				AC9325FF2AD98A0D0036943F /* CompletionsBody.swift in Sources */,
+				AC8950112AD9ADDC00308AC8 /* OpenAIService.swift in Sources */,
 				AC9326012AD98A290036943F /* CompletionsResponse.swift in Sources */,
+				AC89500F2AD9ADBF00308AC8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
