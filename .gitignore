@@ -147,3 +147,6 @@ GitHub.sublime-settings
 
 # API Key
 
+# User state, data
+*.xcuserstate
+xcuserdata/
