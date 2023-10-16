@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC79F66D2ADD27F2005F2132 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79F66C2ADD27F2005F2132 /* Chapter.swift */; };
+		AC79F66F2ADD27FD005F2132 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79F66E2ADD27FD005F2132 /* DataManager.swift */; };
 		AC89500F2AD9ADBF00308AC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89500E2AD9ADBF00308AC8 /* Constants.swift */; };
 		AC8950112AD9ADDC00308AC8 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */; };
 		AC8950132AD9AE0000308AC8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950122AD9AE0000308AC8 /* NetworkManager.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC79F66C2ADD27F2005F2132 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		AC79F66E2ADD27FD005F2132 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		AC89500E2AD9ADBF00308AC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		AC8950122AD9AE0000308AC8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -331,8 +335,10 @@
 			files = (
 				AC8950132AD9AE0000308AC8 /* NetworkManager.swift in Sources */,
 				AC9325C02AD954430036943F /* ContentView.swift in Sources */,
+				AC79F66F2ADD27FD005F2132 /* DataManager.swift in Sources */,
 				AC9325BE2AD954430036943F /* OneDayOneAppleApp.swift in Sources */,
 				AC9325FF2AD98A0D0036943F /* CompletionsBody.swift in Sources */,
+				AC79F66D2ADD27F2005F2132 /* Chapter.swift in Sources */,
 				AC8950112AD9ADDC00308AC8 /* OpenAIService.swift in Sources */,
 				AC9326012AD98A290036943F /* CompletionsResponse.swift in Sources */,
 				AC89500F2AD9ADBF00308AC8 /* Constants.swift in Sources */,
