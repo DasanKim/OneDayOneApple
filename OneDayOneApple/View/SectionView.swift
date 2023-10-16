@@ -9,46 +9,52 @@ import SwiftUI
 
 struct SectionView: View {
     let openAIService = OpenAIService(baseURL: Constants.OpenAIBaseURL, endpoint: Constants.OpenAIEndpoint)
-    var text: String = """
- *Access control* restricts access to parts of your code from code in other source files and modules. This feature enables you to hide the implementation details of your code, and to specify a preferred interface through which that code can be accessed and used.
-"""
-    @State var translatedText: String = ""
-    @State var translatedTextList = [String]()
-    @State var isTranslate: Bool = false
+    let chapterTitle: String
     @Binding var section: Section
     
     var body: some View {
         VStack {
-            HeaderView(subTitle: section.title)
+            HeaderView(title: chapterTitle, subTitle: section.title)
                 .frame(height: 150)
             
             ScrollView {
                 VStack(spacing: 0) {
-                    StatementCell(text: text)
-                        .onTapGesture {
-                            translate()
-                            isTranslate.toggle()
+                    ForEach($section.paragraphs, id: \.id) { $paragraph in
+                        StatementCell(text: paragraph.text)
+                            .onTapGesture {
+                                DispatchQueue.main.async {
+                                    translate(paragraph: paragraph)
+                                    paragraph.translatedTextShowing.toggle()
+                                }
+                            }
+                        if paragraph.translatedTextShowing {
+                            StatementCell(text: paragraph.translatedText ?? "")
                         }
-                    if isTranslate {
-                        StatementCell(text: "번역됨")
-                        //StatementCell(text: translatedText)
                     }
                     Button("COMPLETE!") {
-                        section.isComplete = true
+                        section.isComplete.toggle()
                     }
+                    .background(.black)
+                    .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
                 }
             }
         }
     }
     
-    func translate() {
-        openAIService.sendMessage(message: text) { result in
+    func translate(paragraph: Paragraph) {
+        guard let index = section.paragraphs.firstIndex(where: {$0.id == paragraph.id}) else {
+            return
+        }
+        
+        openAIService.sendMessage(message: paragraph.text) { result in
             switch result {
             case .success(let response):
-                DispatchQueue.main.async {
-                    translatedText = response.choices.first?.text ?? ""
+                var responseText = response.choices.first?.text ?? ""
+                if responseText.hasPrefix("\n") {
+                    responseText = responseText.trimmingCharacters(in: CharacterSet(charactersIn: "\n"))
                 }
-                //translatedText = response.choices.first?.text ?? ""
+                section.paragraphs[index].translatedText = responseText
+                
             case .failure(let error):
                 print(error)
             }
@@ -58,6 +64,6 @@ struct SectionView: View {
 
 struct SectionView_Previews: PreviewProvider {
     static var previews: some View {
-        SectionView(section: .constant(Section(title: "Title", isComplete: true)))
+        SectionView(chapterTitle: "ChapterTitle", section: .constant(DataManager().fetchMarkdownFile()[1].sections[1]))
     }
 }
