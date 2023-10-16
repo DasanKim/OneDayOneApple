@@ -16,7 +16,7 @@ struct CompletionsBody: Encodable {
     init(
         model: String = "gpt-3.5-turbo-instruct",
         prompt: String,
-        max_tokens: Int = 200,
+        max_tokens: Int = 400,
         temperature: Float? = 1.0
     ){
         self.model = model
