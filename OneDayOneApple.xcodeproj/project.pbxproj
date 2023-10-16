@@ -11,6 +11,7 @@
 		AC79F66F2ADD27FD005F2132 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79F66E2ADD27FD005F2132 /* DataManager.swift */; };
 		AC79F6762ADD76B5005F2132 /* BasicOperators.md in Resources */ = {isa = PBXBuildFile; fileRef = AC79F6752ADD76B5005F2132 /* BasicOperators.md */; };
 		AC79F6782ADD7801005F2132 /* MarkdownType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79F6772ADD7801005F2132 /* MarkdownType.swift */; };
+		AC79F67B2ADDAF0B005F2132 /* Markdownosaur in Frameworks */ = {isa = PBXBuildFile; productRef = AC79F67A2ADDAF0B005F2132 /* Markdownosaur */; };
 		AC89500F2AD9ADBF00308AC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89500E2AD9ADBF00308AC8 /* Constants.swift */; };
 		AC8950112AD9ADDC00308AC8 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */; };
 		AC8950132AD9AE0000308AC8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950122AD9AE0000308AC8 /* NetworkManager.swift */; };
@@ -77,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC79F67B2ADDAF0B005F2132 /* Markdownosaur in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +248,9 @@
 			dependencies = (
 			);
 			name = OneDayOneApple;
+			packageProductDependencies = (
+				AC79F67A2ADDAF0B005F2132 /* Markdownosaur */,
+			);
 			productName = OneDayOneApple;
 			productReference = AC9325BA2AD954430036943F /* OneDayOneApple.app */;
 			productType = "com.apple.product-type.application";
@@ -318,6 +323,9 @@
 				Base,
 			);
 			mainGroup = AC9325B12AD954430036943F;
+			packageReferences = (
+				AC79F6792ADDAF0B005F2132 /* XCRemoteSwiftPackageReference "Markdownosaur" */,
+			);
 			productRefGroup = AC9325BB2AD954430036943F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -695,6 +703,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC79F6792ADDAF0B005F2132 /* XCRemoteSwiftPackageReference "Markdownosaur" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/christianselig/Markdownosaur.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC79F67A2ADDAF0B005F2132 /* Markdownosaur */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC79F6792ADDAF0B005F2132 /* XCRemoteSwiftPackageReference "Markdownosaur" */;
+			productName = Markdownosaur;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC9325B22AD954430036943F /* Project object */;
 }
