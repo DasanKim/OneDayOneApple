@@ -10,6 +10,7 @@
 		AC79F66D2ADD27F2005F2132 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79F66C2ADD27F2005F2132 /* Chapter.swift */; };
 		AC79F66F2ADD27FD005F2132 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79F66E2ADD27FD005F2132 /* DataManager.swift */; };
 		AC79F6762ADD76B5005F2132 /* BasicOperators.md in Resources */ = {isa = PBXBuildFile; fileRef = AC79F6752ADD76B5005F2132 /* BasicOperators.md */; };
+		AC79F6782ADD7801005F2132 /* MarkdownType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79F6772ADD7801005F2132 /* MarkdownType.swift */; };
 		AC89500F2AD9ADBF00308AC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89500E2AD9ADBF00308AC8 /* Constants.swift */; };
 		AC8950112AD9ADDC00308AC8 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */; };
 		AC8950132AD9AE0000308AC8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950122AD9AE0000308AC8 /* NetworkManager.swift */; };
@@ -49,6 +50,7 @@
 		AC79F66C2ADD27F2005F2132 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		AC79F66E2ADD27FD005F2132 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		AC79F6752ADD76B5005F2132 /* BasicOperators.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = BasicOperators.md; sourceTree = "<group>"; };
+		AC79F6772ADD7801005F2132 /* MarkdownType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownType.swift; sourceTree = "<group>"; };
 		AC89500E2AD9ADBF00308AC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		AC8950122AD9AE0000308AC8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				AC79F6702ADD289B005F2132 /* OpenAI */,
 				AC79F66C2ADD27F2005F2132 /* Chapter.swift */,
 				AC79F66E2ADD27FD005F2132 /* DataManager.swift */,
+				AC79F6772ADD7801005F2132 /* MarkdownType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				ACA957DE2ADA2F03008421DF /* StatementCell.swift in Sources */,
 				AC9325FF2AD98A0D0036943F /* CompletionsBody.swift in Sources */,
 				ACA957E02ADA3500008421DF /* ChapterListView.swift in Sources */,
+				AC79F6782ADD7801005F2132 /* MarkdownType.swift in Sources */,
 				AC79F66D2ADD27F2005F2132 /* Chapter.swift in Sources */,
 				ACB68C982ADC3BB50055BC05 /* HeaderView.swift in Sources */,
 				AC8950112AD9ADDC00308AC8 /* OpenAIService.swift in Sources */,
