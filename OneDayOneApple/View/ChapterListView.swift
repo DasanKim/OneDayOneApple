@@ -8,20 +8,37 @@
 import SwiftUI
 
 struct ChapterListView: View {
-    @State var chapters: [Chapter] = DataManager.chapters
-    @State var selectedSection: Section = Section(title: "", isComplete: false)
+    @State var chapters: [Chapter] = DataManager().fetchMarkdownFile()
+    @State var selectedSection: Section = Section(title: "", paragraphs: [], isComplete: false)
     
     var body: some View {
         NavigationView {
             VStack {
-                HeaderView(subTitle: "")
+                HeaderView(title: "Today One Apple", subTitle: nil)
                     .frame(height: 150)
                 List {
                     ForEach(chapters, id: \.id) { chapter in
                         DisclosureGroup {
+                            NavigationLink {
+                                SectionView(chapterTitle: chapter.title, section: $selectedSection)
+                                    .onAppear {
+                                        selectedSection = chapter.overview
+                                    }
+                                    .onDisappear {
+                                        withAnimation {
+                                            updateSection(chapter.overview.id)
+                                        }
+                                    }
+                            } label: {
+                                Label {
+                                    Text("Overview")
+                                } icon: {
+                                    Image(systemName: chapter.overview.isComplete ? "checkmark.circle.fill" : "circle")
+                                }
+                            }
                             ForEach(chapter.sections, id: \.id) { section in
                                 NavigationLink {
-                                    SectionView(section: $selectedSection)
+                                    SectionView(chapterTitle: chapter.title, section: $selectedSection)
                                         .onAppear {
                                             selectedSection = section
                                         }

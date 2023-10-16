@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
+    let title: String
     let subTitle: String?
     
     var body: some View {
@@ -18,7 +19,7 @@ struct HeaderView: View {
             
             VStack(spacing: 0) {
                 HStack {
-                    Text("Today One Apple")
+                    Text(title)
                         .foregroundColor(.white)
                         .font(.title)
                         .padding(EdgeInsets(top: 20, leading: 20, bottom: 10, trailing: 0))
@@ -39,6 +40,6 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(subTitle: "SubTitle")
+        HeaderView(title: "Today One Apple", subTitle: "SubTitle")
     }
 }
