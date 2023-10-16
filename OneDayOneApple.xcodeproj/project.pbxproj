@@ -21,6 +21,9 @@
 		AC9325DB2AD954460036943F /* OneDayOneAppleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9325DA2AD954460036943F /* OneDayOneAppleUITestsLaunchTests.swift */; };
 		AC9325FF2AD98A0D0036943F /* CompletionsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9325FE2AD98A0D0036943F /* CompletionsBody.swift */; };
 		AC9326012AD98A290036943F /* CompletionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9326002AD98A290036943F /* CompletionsResponse.swift */; };
+		ACA957DE2ADA2F03008421DF /* StatementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA957DD2ADA2F03008421DF /* StatementCell.swift */; };
+		ACA957E02ADA3500008421DF /* ChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA957DF2ADA3500008421DF /* ChapterListView.swift */; };
+		ACB68C982ADC3BB50055BC05 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB68C972ADC3BB50055BC05 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		AC9325DA2AD954460036943F /* OneDayOneAppleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDayOneAppleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AC9325FE2AD98A0D0036943F /* CompletionsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionsBody.swift; sourceTree = "<group>"; };
 		AC9326002AD98A290036943F /* CompletionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionsResponse.swift; sourceTree = "<group>"; };
+		ACA957DD2ADA2F03008421DF /* StatementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementCell.swift; sourceTree = "<group>"; };
+		ACA957DF2ADA3500008421DF /* ChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
+		ACB68C972ADC3BB50055BC05 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		AC79F6722ADD2A03005F2132 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				ACB68C972ADC3BB50055BC05 /* HeaderView.swift */,
+				ACA957DD2ADA2F03008421DF /* StatementCell.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		AC9325B12AD954430036943F = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +144,7 @@
 				AC9325E82AD959830036943F /* Application */,
 				AC9325EA2AD95F040036943F /* Model */,
 				AC9325E72AD959790036943F /* View */,
+				AC79F6712ADD28E6005F2132 /* Utility */,
 				AC9325E92AD959900036943F /* Resource */,
 				AC9325C32AD954460036943F /* Preview Content */,
 			);
@@ -164,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				AC9325BF2AD954430036943F /* ContentView.swift */,
+				ACA957DF2ADA3500008421DF /* ChapterListView.swift */,
+				AC79F6722ADD2A03005F2132 /* Component */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,8 +355,11 @@
 				AC9325C02AD954430036943F /* ContentView.swift in Sources */,
 				AC79F66F2ADD27FD005F2132 /* DataManager.swift in Sources */,
 				AC9325BE2AD954430036943F /* OneDayOneAppleApp.swift in Sources */,
+				ACA957DE2ADA2F03008421DF /* StatementCell.swift in Sources */,
 				AC9325FF2AD98A0D0036943F /* CompletionsBody.swift in Sources */,
+				ACA957E02ADA3500008421DF /* ChapterListView.swift in Sources */,
 				AC79F66D2ADD27F2005F2132 /* Chapter.swift in Sources */,
+				ACB68C982ADC3BB50055BC05 /* HeaderView.swift in Sources */,
 				AC8950112AD9ADDC00308AC8 /* OpenAIService.swift in Sources */,
 				AC9326012AD98A290036943F /* CompletionsResponse.swift in Sources */,
 				AC89500F2AD9ADBF00308AC8 /* Constants.swift in Sources */,
