@@ -23,6 +23,7 @@
 		AC9326012AD98A290036943F /* CompletionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9326002AD98A290036943F /* CompletionsResponse.swift */; };
 		ACA957DE2ADA2F03008421DF /* StatementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA957DD2ADA2F03008421DF /* StatementCell.swift */; };
 		ACA957E02ADA3500008421DF /* ChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA957DF2ADA3500008421DF /* ChapterListView.swift */; };
+		ACA957E42ADA6D53008421DF /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA957E32ADA6D53008421DF /* SectionView.swift */; };
 		ACB68C982ADC3BB50055BC05 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB68C972ADC3BB50055BC05 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		AC9326002AD98A290036943F /* CompletionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionsResponse.swift; sourceTree = "<group>"; };
 		ACA957DD2ADA2F03008421DF /* StatementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementCell.swift; sourceTree = "<group>"; };
 		ACA957DF2ADA3500008421DF /* ChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
+		ACA957E32ADA6D53008421DF /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		ACB68C972ADC3BB50055BC05 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 			children = (
 				AC9325BF2AD954430036943F /* ContentView.swift */,
 				ACA957DF2ADA3500008421DF /* ChapterListView.swift */,
+				ACA957E32ADA6D53008421DF /* SectionView.swift */,
 				AC79F6722ADD2A03005F2132 /* Component */,
 			);
 			path = View;
@@ -353,6 +356,7 @@
 			files = (
 				AC8950132AD9AE0000308AC8 /* NetworkManager.swift in Sources */,
 				AC9325C02AD954430036943F /* ContentView.swift in Sources */,
+				ACA957E42ADA6D53008421DF /* SectionView.swift in Sources */,
 				AC79F66F2ADD27FD005F2132 /* DataManager.swift in Sources */,
 				AC9325BE2AD954430036943F /* OneDayOneAppleApp.swift in Sources */,
 				ACA957DE2ADA2F03008421DF /* StatementCell.swift in Sources */,
