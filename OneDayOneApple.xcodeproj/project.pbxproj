@@ -81,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC79F6702ADD289B005F2132 /* OpenAI */ = {
+			isa = PBXGroup;
+			children = (
+				AC9325FD2AD989DF0036943F /* DTO */,
+			);
+			path = OpenAI;
+			sourceTree = "<group>";
+		};
 		AC9325B12AD954430036943F = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +173,6 @@
 		AC9325EA2AD95F040036943F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AC9325FD2AD989DF0036943F /* DTO */,
 				AC89500E2AD9ADBF00308AC8 /* Constants.swift */,
 				AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */,
 				AC8950122AD9AE0000308AC8 /* NetworkManager.swift */,
