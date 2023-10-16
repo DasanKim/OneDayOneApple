@@ -24,7 +24,7 @@ enum NetworkError: LocalizedError {
     }
 }
 
-class NetworkManager {
+final class NetworkManager {
     func fetchData(urlRequest: URLRequest?, completion: @escaping (Result<Data, NetworkError>) -> Void) {
         guard let urlRequest = urlRequest else { return }
         

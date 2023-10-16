@@ -18,23 +18,6 @@ final class OpenAIService {
     }
 }
 
-// request
-// - url: baseURL + endpoint
-// - method: POST
-// - parameters: body
-// - encoder: json
-// - header: Authorization = OpenAI_API_KEY, Content-Type = application/json
-
-// response
-// - id
-// - choices:
-//  - text: Chat GPT text
-//  - (finish_reason)
-// - usage
-//  - promptTokens: 보낼 때 사용한 토큰
-//  - completionTokens: 응답으로 사용된 토큰
-//  - totalTokens: 위의 두 개 다 합친 토큰 개수
-
 extension OpenAIService {
     private func configureRequest(body: CompletionsBody) -> URLRequest? {
         guard let url = URL(string: baseURL + endpoint) else {
@@ -56,7 +39,7 @@ extension OpenAIService {
     }
     
     func sendMessage(message: String, completion: @escaping (Result<CompletionsResponse, Error>) -> Void) {
-        let body = CompletionsBody(prompt: message)
+        let body = CompletionsBody(prompt: message + "위 문장을 한국어로 번역해줘.")
         let urlRequest = configureRequest(body: body)
         
         networkManager.fetchData(urlRequest: urlRequest) { result in
@@ -75,3 +58,19 @@ extension OpenAIService {
     }
 }
 
+// request
+// - url: baseURL + endpoint
+// - method: POST
+// - parameters: body
+// - encoder: json
+// - header: Authorization = OpenAI_API_KEY, Content-Type = application/json
+
+// response
+// - id
+// - choices:
+//  - text: Chat GPT text
+//  - (finish_reason)
+// - usage
+//  - promptTokens: 보낼 때 사용한 토큰
+//  - completionTokens: 응답으로 사용된 토큰
+//  - totalTokens: 위의 두 개 다 합친 토큰 개수

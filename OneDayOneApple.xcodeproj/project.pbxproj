@@ -85,8 +85,18 @@
 			isa = PBXGroup;
 			children = (
 				AC9325FD2AD989DF0036943F /* DTO */,
+				AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */,
+				AC89500E2AD9ADBF00308AC8 /* Constants.swift */,
 			);
 			path = OpenAI;
+			sourceTree = "<group>";
+		};
+		AC79F6712ADD28E6005F2132 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AC8950122AD9AE0000308AC8 /* NetworkManager.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		AC9325B12AD954430036943F = {
@@ -173,9 +183,9 @@
 		AC9325EA2AD95F040036943F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AC89500E2AD9ADBF00308AC8 /* Constants.swift */,
-				AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */,
-				AC8950122AD9AE0000308AC8 /* NetworkManager.swift */,
+				AC79F6702ADD289B005F2132 /* OpenAI */,
+				AC79F66C2ADD27F2005F2132 /* Chapter.swift */,
+				AC79F66E2ADD27FD005F2132 /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
