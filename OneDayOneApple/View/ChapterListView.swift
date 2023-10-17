@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChapterListView: View {
-    @State var chapters: [Chapter] = DataManager().fetchMarkdownFile()
+    @State var chapters: [Chapter] = DataManager().fetchChapters()
     @State var selectedSection: Section = Section(title: "", paragraphs: [], isComplete: false)
     
     var body: some View {
@@ -17,26 +17,14 @@ struct ChapterListView: View {
                 HeaderView(title: "Today One Apple", subTitle: nil)
                     .frame(height: 150)
                 List {
-                    ForEach(chapters, id: \.id) { chapter in
+                    ForEach($chapters, id: \.id) { $chapter in
                         DisclosureGroup {
                             NavigationLink {
-                                SectionView(chapterTitle: chapter.title, section: $selectedSection)
-                                    .onAppear {
-                                        selectedSection = chapter.overview
-                                    }
-                                    .onDisappear {
-                                        withAnimation {
-                                            updateSection(chapter.overview.id)
-                                        }
-                                    }
+                                SectionView(chapterTitle: chapter.title, section: $chapter.overview)
                             } label: {
-                                Label {
-                                    Text("Overview")
-                                } icon: {
-                                    Image(systemName: chapter.overview.isComplete ? "checkmark.circle.fill" : "circle")
-                                }
+                                Label("Overview", systemImage: "doc.plaintext")
                             }
-                            ForEach(chapter.sections, id: \.id) { section in
+                            ForEach($chapter.sections, id: \.id) { $section in
                                 NavigationLink {
                                     SectionView(chapterTitle: chapter.title, section: $selectedSection)
                                         .onAppear {

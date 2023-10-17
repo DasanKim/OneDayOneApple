@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SectionView: View {
-    let openAIService = OpenAIService(baseURL: Constants.OpenAIBaseURL, endpoint: Constants.OpenAIEndpoint)
+    @Environment(\.dismiss) private var dismiss
+    let openAIService = OpenAIService(baseURL: Constants.openAIBaseURL, endpoint: Constants.openAIEndpoint)
     let chapterTitle: String
     @Binding var section: Section
     
@@ -31,11 +32,15 @@ struct SectionView: View {
                             StatementCell(text: paragraph.translatedText ?? "")
                         }
                     }
-                    Button("COMPLETE!") {
-                        section.isComplete.toggle()
+                    
+                    if section.title != "Overview" {
+                        Button("COMPLETE !") {
+                            section.isComplete.toggle()
+                            dismiss()
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
                     }
-                    .background(.black)
-                    .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
                 }
             }
         }
@@ -64,6 +69,6 @@ struct SectionView: View {
 
 struct SectionView_Previews: PreviewProvider {
     static var previews: some View {
-        SectionView(chapterTitle: "ChapterTitle", section: .constant(DataManager().fetchMarkdownFile()[1].sections[1]))
+        SectionView(chapterTitle: "ChapterTitle", section: .constant(DataManager().fetchChapters()[1].sections[1]))
     }
 }

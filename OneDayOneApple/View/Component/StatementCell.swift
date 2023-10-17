@@ -8,23 +8,24 @@
 import SwiftUI
 
 struct StatementCell: View {
+    let dataManager = DataManager()
     let text: String
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text(text)
-                .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
+            Text(dataManager.convertAttributedString(from: text))
+                .padding(EdgeInsets(top: 5, leading: 20, bottom: 5, trailing: 20))
             Rectangle()
                 .frame(height: 1)
                 .foregroundColor(.gray)
-                .padding(5)
-                .opacity(0.4)
+                .padding(1)
+                .opacity(0.1)
         }
     }
 }
 
 struct StatementCell_Previews: PreviewProvider {
     static var previews: some View {
-        StatementCell(text: "contentasdfasdfasdfasfdasdfajskldjfhaskljdfhklasjdfhlkajsdfklasjdfhklasjfh")
+        StatementCell(text: "The values that operators affect are *operands*. In the expression `1 + 2`, the `+` symbol is an infix operator and its two operands are the values `1` and `2`.")
     }
 }
