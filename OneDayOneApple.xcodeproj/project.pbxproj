@@ -15,6 +15,7 @@
 		AC89500F2AD9ADBF00308AC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89500E2AD9ADBF00308AC8 /* Constants.swift */; };
 		AC8950112AD9ADDC00308AC8 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */; };
 		AC8950132AD9AE0000308AC8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950122AD9AE0000308AC8 /* NetworkManager.swift */; };
+		AC8FC73C2ADEA2C30010891E /* MarkdownParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8FC73B2ADEA2C30010891E /* MarkdownParser.swift */; };
 		AC8FC73E2ADEA7750010891E /* TheBasics.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC73D2ADEA7750010891E /* TheBasics.md */; };
 		AC8FC7402ADEAC370010891E /* StringsAndCharacters.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC73F2ADEAC370010891E /* StringsAndCharacters.md */; };
 		AC8FC7422ADEADB00010891E /* CollectionTypes.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC7412ADEADB00010891E /* CollectionTypes.md */; };
@@ -66,6 +67,7 @@
 		AC89500E2AD9ADBF00308AC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		AC8950122AD9AE0000308AC8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AC8FC73B2ADEA2C30010891E /* MarkdownParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownParser.swift; sourceTree = "<group>"; };
 		AC8FC73D2ADEA7750010891E /* TheBasics.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TheBasics.md; sourceTree = "<group>"; };
 		AC8FC73F2ADEAC370010891E /* StringsAndCharacters.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = StringsAndCharacters.md; sourceTree = "<group>"; };
 		AC8FC7412ADEADB00010891E /* CollectionTypes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CollectionTypes.md; sourceTree = "<group>"; };
@@ -249,8 +251,9 @@
 			isa = PBXGroup;
 			children = (
 				AC79F6702ADD289B005F2132 /* OpenAI */,
-				AC79F66C2ADD27F2005F2132 /* Chapter.swift */,
 				AC79F66E2ADD27FD005F2132 /* DataManager.swift */,
+				AC8FC73B2ADEA2C30010891E /* MarkdownParser.swift */,
+				AC79F66C2ADD27F2005F2132 /* Chapter.swift */,
 				AC79F6772ADD7801005F2132 /* MarkdownType.swift */,
 			);
 			path = Model;
@@ -415,6 +418,7 @@
 			files = (
 				AC8950132AD9AE0000308AC8 /* NetworkManager.swift in Sources */,
 				AC9325C02AD954430036943F /* ContentView.swift in Sources */,
+				AC8FC73C2ADEA2C30010891E /* MarkdownParser.swift in Sources */,
 				ACA957E42ADA6D53008421DF /* SectionView.swift in Sources */,
 				AC79F66F2ADD27FD005F2132 /* DataManager.swift in Sources */,
 				AC9325BE2AD954430036943F /* OneDayOneAppleApp.swift in Sources */,
