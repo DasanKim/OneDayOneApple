@@ -24,12 +24,20 @@ struct SectionView: View {
                         StatementCell(text: paragraph.text)
                             .onTapGesture {
                                 DispatchQueue.main.async {
-                                    translate(paragraph: paragraph)
-                                    paragraph.translatedTextShowing.toggle()
+                                    if paragraph.isTranslatable && !paragraph.isTranslated {
+                                        translate(paragraph: paragraph)
+                                    }
+                                    if paragraph.isTranslatable {
+                                        paragraph.translatedTextShowing.toggle()
+                                    }
                                 }
                             }
                         if paragraph.translatedTextShowing {
                             StatementCell(text: paragraph.translatedText ?? "")
+                                .overlay {
+                                    Color(.gray)
+                                        .opacity(0.2)
+                                }
                         }
                     }
                     
