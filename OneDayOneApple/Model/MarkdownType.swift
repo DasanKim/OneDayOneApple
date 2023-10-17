@@ -11,6 +11,7 @@ enum MarkdownType {
     case heading3
     case heading4
     case code
+    case list
     case commentStart
     case commentEnd
     case newLine
@@ -28,6 +29,8 @@ enum MarkdownType {
             return "#### "
         case .code:
             return "```"
+        case .list:
+            return "- "
         case .commentStart:
             return "<!--"
         case .commentEnd:

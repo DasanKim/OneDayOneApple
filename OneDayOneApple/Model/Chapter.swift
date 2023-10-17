@@ -12,7 +12,12 @@ struct Chapter: Identifiable {
     var title: String
     var overview: Section
     var sections: [Section]
-    var isComplete: Bool
+    
+    var isComplete: Bool {
+        sections.reduce(true) { partialResult, section in
+            partialResult && section.isComplete
+        }
+    }
 }
 
 struct Section: Identifiable {
