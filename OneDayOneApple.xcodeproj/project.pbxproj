@@ -15,6 +15,17 @@
 		AC89500F2AD9ADBF00308AC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC89500E2AD9ADBF00308AC8 /* Constants.swift */; };
 		AC8950112AD9ADDC00308AC8 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */; };
 		AC8950132AD9AE0000308AC8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8950122AD9AE0000308AC8 /* NetworkManager.swift */; };
+		AC8FC73E2ADEA7750010891E /* TheBasics.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC73D2ADEA7750010891E /* TheBasics.md */; };
+		AC8FC7402ADEAC370010891E /* StringsAndCharacters.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC73F2ADEAC370010891E /* StringsAndCharacters.md */; };
+		AC8FC7422ADEADB00010891E /* CollectionTypes.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC7412ADEADB00010891E /* CollectionTypes.md */; };
+		AC8FC7442ADEADE60010891E /* ControlFlow.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC7432ADEADE60010891E /* ControlFlow.md */; };
+		AC8FC7462ADEAE7C0010891E /* Functions.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC7452ADEAE7C0010891E /* Functions.md */; };
+		AC8FC7482ADEAEAD0010891E /* Closures.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC7472ADEAEAD0010891E /* Closures.md */; };
+		AC8FC74A2ADEAEDD0010891E /* Enumerations.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC7492ADEAEDD0010891E /* Enumerations.md */; };
+		AC8FC74C2ADEAF4D0010891E /* ClassesAndStructures.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC74B2ADEAF4D0010891E /* ClassesAndStructures.md */; };
+		AC8FC74E2ADEAF880010891E /* Properties.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC74D2ADEAF880010891E /* Properties.md */; };
+		AC8FC7502ADEAFCA0010891E /* Methods.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC74F2ADEAFCA0010891E /* Methods.md */; };
+		AC8FC7522ADEAFF70010891E /* Subscripts.md in Resources */ = {isa = PBXBuildFile; fileRef = AC8FC7512ADEAFF70010891E /* Subscripts.md */; };
 		AC9325BE2AD954430036943F /* OneDayOneAppleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9325BD2AD954430036943F /* OneDayOneAppleApp.swift */; };
 		AC9325C02AD954430036943F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9325BF2AD954430036943F /* ContentView.swift */; };
 		AC9325C22AD954460036943F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9325C12AD954460036943F /* Assets.xcassets */; };
@@ -55,6 +66,17 @@
 		AC89500E2AD9ADBF00308AC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC8950102AD9ADDC00308AC8 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		AC8950122AD9AE0000308AC8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AC8FC73D2ADEA7750010891E /* TheBasics.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TheBasics.md; sourceTree = "<group>"; };
+		AC8FC73F2ADEAC370010891E /* StringsAndCharacters.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = StringsAndCharacters.md; sourceTree = "<group>"; };
+		AC8FC7412ADEADB00010891E /* CollectionTypes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CollectionTypes.md; sourceTree = "<group>"; };
+		AC8FC7432ADEADE60010891E /* ControlFlow.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ControlFlow.md; sourceTree = "<group>"; };
+		AC8FC7452ADEAE7C0010891E /* Functions.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Functions.md; sourceTree = "<group>"; };
+		AC8FC7472ADEAEAD0010891E /* Closures.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Closures.md; sourceTree = "<group>"; };
+		AC8FC7492ADEAEDD0010891E /* Enumerations.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Enumerations.md; sourceTree = "<group>"; };
+		AC8FC74B2ADEAF4D0010891E /* ClassesAndStructures.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ClassesAndStructures.md; sourceTree = "<group>"; };
+		AC8FC74D2ADEAF880010891E /* Properties.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Properties.md; sourceTree = "<group>"; };
+		AC8FC74F2ADEAFCA0010891E /* Methods.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Methods.md; sourceTree = "<group>"; };
+		AC8FC7512ADEAFF70010891E /* Subscripts.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Subscripts.md; sourceTree = "<group>"; };
 		AC9325BA2AD954430036943F /* OneDayOneApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneDayOneApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9325BD2AD954430036943F /* OneDayOneAppleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDayOneAppleApp.swift; sourceTree = "<group>"; };
 		AC9325BF2AD954430036943F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -206,7 +228,18 @@
 		AC9325E92AD959900036943F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				AC8FC73D2ADEA7750010891E /* TheBasics.md */,
 				AC79F6752ADD76B5005F2132 /* BasicOperators.md */,
+				AC8FC73F2ADEAC370010891E /* StringsAndCharacters.md */,
+				AC8FC7412ADEADB00010891E /* CollectionTypes.md */,
+				AC8FC7432ADEADE60010891E /* ControlFlow.md */,
+				AC8FC7452ADEAE7C0010891E /* Functions.md */,
+				AC8FC7472ADEAEAD0010891E /* Closures.md */,
+				AC8FC7492ADEAEDD0010891E /* Enumerations.md */,
+				AC8FC74B2ADEAF4D0010891E /* ClassesAndStructures.md */,
+				AC8FC74D2ADEAF880010891E /* Properties.md */,
+				AC8FC74F2ADEAFCA0010891E /* Methods.md */,
+				AC8FC7512ADEAFF70010891E /* Subscripts.md */,
 				AC9325C12AD954460036943F /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -342,8 +375,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8FC74A2ADEAEDD0010891E /* Enumerations.md in Resources */,
+				AC8FC7402ADEAC370010891E /* StringsAndCharacters.md in Resources */,
+				AC8FC7522ADEAFF70010891E /* Subscripts.md in Resources */,
 				AC9325C52AD954460036943F /* Preview Assets.xcassets in Resources */,
+				AC8FC73E2ADEA7750010891E /* TheBasics.md in Resources */,
 				AC79F6762ADD76B5005F2132 /* BasicOperators.md in Resources */,
+				AC8FC74C2ADEAF4D0010891E /* ClassesAndStructures.md in Resources */,
+				AC8FC7462ADEAE7C0010891E /* Functions.md in Resources */,
+				AC8FC7422ADEADB00010891E /* CollectionTypes.md in Resources */,
+				AC8FC7502ADEAFCA0010891E /* Methods.md in Resources */,
+				AC8FC7442ADEADE60010891E /* ControlFlow.md in Resources */,
+				AC8FC74E2ADEAF880010891E /* Properties.md in Resources */,
+				AC8FC7482ADEAEAD0010891E /* Closures.md in Resources */,
 				AC9325C22AD954460036943F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
