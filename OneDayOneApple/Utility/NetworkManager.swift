@@ -24,6 +24,13 @@ enum NetworkError: LocalizedError {
     }
 }
 
+/// 1. 요 아이는 struct여도 될 거 같이 생겼는데 class여서
+/// class와 struct의 차이부터 시작해서
+/// 선정 기준이나 메모리에서 어떻게 동작하는지까지 물어볼거 같아요
+/// 
+/// 2. fetchData를 조금 더 고도화 할 수 있을거 같아요
+/// Alamofire를 보면서 network interceptor 개념이나,
+/// decoding, errorhandling 등을 분리해보는것도 좋은 경험일 것 같습니다.
 final class NetworkManager {
     func fetchData(urlRequest: URLRequest?, completion: @escaping (Result<Data, NetworkError>) -> Void) {
         guard let urlRequest = urlRequest else { return }

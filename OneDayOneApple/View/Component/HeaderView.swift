@@ -18,6 +18,7 @@ struct HeaderView: View {
             .edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 0) {
+                /// 같은 넓이를 주려고 하신거 같은데, HStack + Spacer보다는 .frame(maxWidth...)을 사용하시는게 더 나을거 같아요
                 HStack {
                     Text(title)
                         .foregroundColor(.white)

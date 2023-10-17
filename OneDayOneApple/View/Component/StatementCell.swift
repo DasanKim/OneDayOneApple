@@ -14,6 +14,9 @@ struct StatementCell: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text(dataManager.convertAttributedString(from: text))
+            /// 요렇게 쓰면 더 읽기 편할 거 같아요
+            /// .padding(.vertical, 5)
+            /// .padding(.horizontal, 20)
                 .padding(EdgeInsets(top: 5, leading: 20, bottom: 5, trailing: 20))
             Rectangle()
                 .frame(height: 1)
